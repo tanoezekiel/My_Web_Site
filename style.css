@@ -1,0 +1,109 @@
+/* ----- Style général ----- */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* ----- En-tête ----- */
+header {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 30px 10px;
+  color: #1c4e2b;
+  border-bottom: 3px solid #2e8b57;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 0;
+}
+
+/* ----- Contenu principal ----- */
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 40px;
+  gap: 60px; /* plus d’espace entre les colonnes */
+}
+
+/* ----- Colonne gauche (photo + contact) ----- */
+.left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  max-width: 300px;
+  width: 100%;
+}
+
+/* ----- Photo ----- */
+.photo-container {
+  text-align: center;
+  width: 100%;
+}
+
+.photo-container img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.address {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #444;
+}
+
+/* ----- Colonne droite ----- */
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 600px;
+}
+
+/* ----- Boîtes de contenu ----- */
+.about, .skills, .contact {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* ----- Titres secondaires ----- */
+h2 {
+  color: #1c4e2b;
+  border-bottom: 2px solid #2e8b57;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 1.4em;
+}
+
+/* ----- Responsive pour téléphone ----- */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .left-column, .right-column {
+    width: 90%;
+  }
+
+  .top-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    padding-bottom: 60px;
+  }
+}
