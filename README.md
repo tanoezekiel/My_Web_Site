@@ -1,2 +1,2 @@
-# ezekieltano.github.io
+# tanoezekiel.github.io
 My personnal website
